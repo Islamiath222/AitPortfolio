@@ -1,0 +1,10 @@
+{
+  "name": "ait-portfolio-site",
+  "version": "1.0.0",
+  "description": "Portfolio site for Ademola Iqbal Tidjani | AIT Build & Interior Supply",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  }
+}
+

@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ademola Iqbal Tidjani | AIT Build &amp; Interior Supply</title>
+<meta name="description" content="Architectural construction, interior space transformation, renovation and structural development by Ademola Iqbal Tidjani.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Manrope:wght@400;500;600&display=swap">
+<style>
+:root{--bg:#FFFFFF;--bg2:#F7F3EC;--ink:#3B2312;--brown:#7A4A00;--tan:#B8946A;--black:#1A1612;--white:#fff;--card:#F8F3EA;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Manrope,system-ui,sans-serif;line-height:1.7;font-size:17px}
+h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;line-height:1.05;margin:0}
+.lbl{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--brown)}
+section{padding:110px 6vw}
+.wrap{max-width:1280px;margin:auto}
+header{position:fixed;top:0;left:0;right:0;z-index:20;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding:12px 5vw;padding-top:calc(12px + env(safe-area-inset-top,0px));background:color-mix(in srgb,var(--bg) 95%,transparent);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid color-mix(in srgb,var(--tan) 40%,transparent)}
+.head-left{display:block}
+.brand{display:flex;justify-content:center;align-items:center;text-decoration:none;justify-self:center}
+.brand-logo{height:44px;width:auto;max-width:540px;object-fit:contain;display:block;image-rendering:-webkit-optimize-contrast;transition:transform .2s ease}
+.brand-logo:hover{transform:scale(1.02)}
+nav{display:flex;align-items:center;justify-self:end}
+.nav-links{display:flex;align-items:center}
+nav a{margin-left:24px;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink);text-decoration:none;position:relative}
+nav a::after{content:"";position:absolute;left:0;bottom:-4px;height:1px;width:0;background:var(--brown);transition:width .3s}
+nav a:hover::after{width:100%}
+.lang-switch{display:inline-flex;align-items:center;gap:4px;border:1px solid var(--tan);padding:4px 8px;border-radius:2px;background:var(--bg);margin-left:20px}
+.lang-opt{background:none;border:0;color:var(--ink);font:600 11px Manrope;letter-spacing:.14em;cursor:pointer;padding:2px 4px;opacity:.5;transition:.2s}
+.lang-opt:hover{opacity:1;color:var(--brown)}
+.lang-opt.on{opacity:1;color:var(--brown);font-weight:700;border-bottom:1.5px solid var(--brown)}
+.lang-sep{color:var(--tan);font-size:10px;user-select:none}
+#burger{display:none;background:none;border:1px solid var(--tan);color:var(--ink);padding:10px;cursor:pointer;align-items:center;justify-content:center;width:42px;height:42px;border-radius:4px;transition:background .2s,border-color .2s}
+#burger:hover{border-color:var(--brown);background:rgba(184,148,106,.08)}
+.burger-lines{display:flex;flex-direction:column;justify-content:center;gap:4px;width:20px}
+.burger-lines span{display:block;height:2px;background:var(--brown);width:100%;border-radius:1px}
+.btn{display:inline-block;padding:16px 30px;font:600 12px Manrope;letter-spacing:.2em;text-transform:uppercase;text-decoration:none;border:1px solid var(--brown);cursor:pointer;transition:.3s;min-height:48px}
+.btn.fill{background:var(--brown);color:#fff}.btn.fill:hover{background:var(--black);border-color:var(--black)}
+.btn.line{background:none;color:var(--ink)}.btn.line:hover{background:var(--brown);color:#fff}
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;padding:170px 6vw 90px;background-image:url('assets/project-interior.jpg');background-size:cover;background-position:center 38%;background-repeat:no-repeat}
+.hero .wrap{width:100%;max-width:1280px;margin:0 auto}
+.glass-card{max-width:660px;margin-top:24px;border-radius:18px;padding:50px 48px;background:rgba(255,255,255,.78);backdrop-filter:blur(20px) saturate(170%);-webkit-backdrop-filter:blur(20px) saturate(170%);border:1px solid rgba(255,255,255,.88);box-shadow:0 24px 60px rgba(26,22,18,.24),0 8px 20px rgba(0,0,0,.12),inset 0 1px 2px rgba(255,255,255,.95)}
+.glass-card h1{font-size:clamp(38px,5.2vw,74px);color:var(--black);margin:0 0 10px;line-height:1.05;letter-spacing:-.01em}
+.glass-card h2{font-size:clamp(22px,2.5vw,34px);color:var(--brown);font-style:italic;margin-bottom:18px;line-height:1.15}
+.glass-card p{color:var(--ink);font-size:16px;line-height:1.7;max-width:530px;margin-bottom:24px;font-weight:450}
+.glass-card .cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:24px}
+.glass-card .btn.fill{background:var(--brown);color:#fff;border-color:var(--brown)}
+.glass-card .btn.fill:hover{background:var(--black);border-color:var(--black)}
+.glass-card .btn.line{background:rgba(255,255,255,.55);color:var(--ink);border:1px solid var(--brown);backdrop-filter:blur(4px)}
+.glass-card .btn.line:hover{background:var(--brown);color:#fff}
+.cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:32px}
+.ph{overflow:hidden;background:var(--bg2);position:relative}
+.ph svg{width:100%;height:100%;display:block;transition:transform .9s cubic-bezier(.2,.7,.2,1)}
+.filters{display:flex;gap:10px;flex-wrap:wrap;margin:36px 0 44px}
+.filters button{background:none;border:0;border-bottom:1px solid transparent;font:500 12px Manrope;letter-spacing:.18em;text-transform:uppercase;color:var(--ink);padding:10px 14px;cursor:pointer;min-height:44px}
+.filters button.on{border-color:var(--brown);color:var(--brown)}
+.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:28px}
+.card{grid-column:span 4;cursor:pointer;background:none;border:0;text-align:left;padding:0;color:inherit;font:inherit}
+.card:nth-child(5n+1){grid-column:span 7}.card:nth-child(5n+2){grid-column:span 5}
+.card .ph{aspect-ratio:4/3}.card:nth-child(5n+2) .ph{aspect-ratio:1/1}.card:nth-child(5n+3) .ph{aspect-ratio:3/4}
+.card:hover svg{transform:scale(1.06)}
+.card .ph::after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 55%,rgba(26,22,18,.35));opacity:0;transition:.4s}
+.card:hover .ph::after{opacity:1}
+.card h3{font-size:30px;margin-top:16px}
+.meta{font-size:13px;color:var(--brown);letter-spacing:.06em}
+.view{font-size:11px;letter-spacing:.2em;text-transform:uppercase;border-bottom:1px solid var(--brown);padding-bottom:2px}
+#about{background:var(--bg2)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:6vw;align-items:center}
+h2.big{font-size:clamp(36px,5vw,68px);margin:14px 0 24px}
+.svc{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px;margin-top:48px}
+.svc div .ph{aspect-ratio:4/5;margin-bottom:18px}
+.svc div:hover svg{transform:scale(1.07)}
+.svc h3{font-size:26px;margin-bottom:8px}.svc p{font-size:15px;margin:0}
+#cv{background:var(--black);color:#EFE6D8;text-align:center}
+#cv .lbl,#cv h2{color:#D9A55B}#cv p{color:#EFE6D8;max-width:560px;margin:0 auto 34px}
+#cv .btn.fill{background:#D9A55B;color:#1A1612;border-color:#D9A55B}
+form{display:grid;gap:18px}
+label{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--brown)}
+input,textarea{width:100%;background:transparent;border:0;border-bottom:1px solid var(--tan);padding:12px 0;font:inherit;color:var(--ink);outline:none}
+input:focus,textarea:focus{border-color:var(--brown)}
+.err{color:#9B2C1F;font-size:13px;min-height:18px}
+.info p{margin:6px 0}.info a{color:var(--brown)}
+footer{background:var(--black);color:#EFE6D8;padding:60px 6vw;padding-bottom:calc(40px + env(safe-area-inset-bottom,0px));font-size:14px}
+footer .f{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap;max-width:1280px;margin:auto}
+footer a{color:#D9A55B;text-decoration:none;margin-right:16px}
+#top{position:fixed;right:20px;bottom:calc(20px + env(safe-area-inset-bottom,0px));width:48px;height:48px;border:1px solid var(--brown);background:var(--bg);color:var(--brown);cursor:pointer;opacity:0;pointer-events:none;transition:.3s;z-index:15}
+#top.show{opacity:1;pointer-events:auto}
+dialog{border:0;padding:0;width:min(1000px,94vw);max-height:92vh;background:var(--bg);color:var(--ink)}
+dialog::backdrop{background:rgba(26,22,18,.75)}
+.mb{padding:32px 5vw 48px}.mb .ph{aspect-ratio:16/9;margin-bottom:28px}
+.mg{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:24px 0}.mg .ph{aspect-ratio:1;margin:0}
+.mb h4{font:600 12px Manrope;letter-spacing:.2em;text-transform:uppercase;color:var(--brown);margin:22px 0 6px}
+.mb p{margin:0}
+#x{float:right;background:none;border:1px solid var(--tan);color:var(--ink);padding:10px 16px;cursor:pointer;font:inherit;font-size:12px;letter-spacing:.15em}
+.rv{opacity:0;transform:translateY(28px);transition:opacity .9s,transform .9s}.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+@media(max-width:860px){
+section{padding:80px 6vw}
+header{display:flex;justify-content:center;align-items:center;padding:16px 18px;padding-top:calc(16px + env(safe-area-inset-top,0px));min-height:76px;position:fixed}
+.head-left{display:none}
+.brand{margin:0 auto;display:flex;justify-content:center;align-items:center}
+.brand-logo{height:auto;width:auto;max-width:min(370px,78vw);max-height:56px;object-fit:contain}
+#burger{display:inline-flex;position:absolute;right:16px;top:50%;transform:translateY(-50%);width:44px;height:44px}
+.hero{padding:145px 5vw 70px}
+.glass-card{margin-top:16px;padding:32px 24px;border-radius:14px;max-width:100%}
+.two{grid-template-columns:1fr}
+nav{display:none;position:absolute;top:100%;left:0;right:0;background:rgba(255,255,255,.98);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);padding:18px 6vw 28px;border-bottom:1px solid var(--tan);box-shadow:0 16px 36px rgba(26,22,18,.12)}
+nav.open{display:block}
+.nav-links{display:flex;flex-direction:column}
+nav a{display:block;margin:0;padding:12px 0;font-size:13px;letter-spacing:.16em;border-bottom:1px solid rgba(184,148,106,.18)}
+.lang-switch{margin-top:18px;margin-left:0;display:inline-flex;padding:6px 12px}
+.card,.card:nth-child(n){grid-column:span 12}.card .ph,.card:nth-child(n) .ph{aspect-ratio:4/3}
+.mg{grid-template-columns:1fr 1fr}}
+@media(max-width:400px){
+header{padding:14px 12px;min-height:70px}
+.brand-logo{max-width:min(310px,74vw);max-height:50px}
+#burger{right:12px;width:40px;height:40px;padding:8px}
+}
+</style>
+</head>
+<body>
+<header>
+<div class="head-left"></div>
+<a class="brand" href="#home" aria-label="AIT Build &amp; Interior Supply">
+  <img src="assets/ait-logo.png" alt="AIT BUILD &amp; INTERIOR SUPPLY" class="brand-logo">
+</a>
+<nav id="nav" aria-label="Main">
+  <div class="nav-links">
+    <a href="#work" data-i18n="nav.work">Work</a>
+    <a href="#about" data-i18n="nav.about">About</a>
+    <a href="#expertise" data-i18n="nav.expertise">Expertise</a>
+    <a href="#cv" data-i18n="nav.cv">CV</a>
+    <a href="#contact" data-i18n="nav.contact">Contact</a>
+  </div>
+  <div class="lang-switch" role="group" aria-label="Language selection">
+    <button id="btn-en" class="lang-opt on" type="button" aria-pressed="true">EN</button>
+    <span class="lang-sep">|</span>
+    <button id="btn-fr" class="lang-opt" type="button" aria-pressed="false">FR</button>
+  </div>
+</nav>
+<button id="burger" aria-expanded="false" aria-controls="nav" aria-label="Open menu">
+  <span class="burger-lines"><span></span><span></span><span></span></span>
+</button>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="wrap">
+    <div class="glass-card">
+      <h1 data-i18n="hero.h1">Ademola Iqbal Tidjani</h1>
+      <h2 data-i18n="hero.h2">Crafting Spaces. Building Excellence.</h2>
+      <p data-i18n="hero.p">A considered approach to building and transforming spaces: precise construction, thoughtful interiors, and a sourcing network that brings quality products from Nigeria into every project.</p>
+      <div class="cta">
+        <a class="btn fill" href="#work" data-i18n="hero.workBtn">Explore my work</a>
+        <a class="btn line" id="cvTop" href="#" download data-i18n="hero.cvBtn">Download CV</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="work"><div class="wrap">
+<div class="lbl rv" data-i18n="work.lbl">Featured Work</div>
+<h2 class="big rv" data-i18n="work.h2">Selected Projects</h2>
+<div class="filters rv" id="filters" role="tablist"></div>
+<div class="grid" id="grid"></div>
+</div></section>
+
+<section id="about"><div class="wrap two">
+<div class="ph rv" id="aboutImg" style="aspect-ratio:4/5" role="img" aria-label="Architectural detail placeholder"></div>
+<div class="rv">
+<div class="lbl" data-i18n="about.lbl">About</div>
+<h2 class="big" data-i18n="about.h2">The Mind Behind the Structures</h2>
+<p data-i18n="about.p1">Ademola Iqbal Tidjani is a dedicated professional in architectural construction and interior space transformation. His work is guided by precision, creativity and a close eye for detail, with a firm commitment to quality at every stage.</p>
+<p data-i18n="about.p2">With a strong understanding of construction and a passion for transforming spaces, he works within your budget and your taste to deliver functional and impressive results. Through AIT Build &amp; Interior Supply, he also imports unique, high-quality materials and products from China, Turkey, France, Italy, and Nigeria, bringing distinctive materials and finishes to every project.</p>
+</div></div></section>
+
+<section id="expertise"><div class="wrap">
+<div class="lbl rv" data-i18n="expertise.lbl">Expertise</div>
+<h2 class="big rv" data-i18n="expertise.h2">What I Do</h2>
+<div class="svc" id="svc"></div>
+</div></section>
+
+<section id="cv"><div class="wrap rv">
+<div class="lbl" data-i18n="cv.lbl">Curriculum Vitae</div>
+<h2 class="big" data-i18n="cv.h2">My Professional Profile</h2>
+<p data-i18n="cv.p">Discover my professional background, expertise, experience, and capabilities.</p>
+<a class="btn fill" id="cvBtn" href="#" download data-i18n="cv.btn">Download my CV</a>
+</div></section>
+
+<section id="contact"><div class="wrap two" style="align-items:start">
+<div class="rv">
+<div class="lbl" data-i18n="contact.lbl">Contact</div>
+<h2 class="big" data-i18n="contact.h2">Let’s build something exceptional.</h2>
+<p data-i18n="contact.p">Have a project in mind? Let’s discuss how we can bring your vision to life.</p>
+<div class="info" id="info"></div>
+</div>
+<form id="form" class="rv" novalidate>
+<div><label for="n" data-i18n="contact.name">Full name</label><input id="n" name="name" autocomplete="name"><div class="err" data-for="n"></div></div>
+<div><label for="e" data-i18n="contact.email">Email address</label><input id="e" name="email" type="email" autocomplete="email"><div class="err" data-for="e"></div></div>
+<div><label for="s" data-i18n="contact.subject">Subject</label><input id="s" name="subject"><div class="err" data-for="s"></div></div>
+<div><label for="m" data-i18n="contact.message">Message</label><textarea id="m" name="message" rows="5"></textarea><div class="err" data-for="m"></div></div>
+<button class="btn fill" type="submit" data-i18n="contact.send">Send message</button>
+<div id="status" role="status" class="meta"></div>
+</form>
+</div></section>
+</main>
+
+<footer><div class="f">
+<div><strong>AIT BUILD &amp; INTERIOR SUPPLY</strong><br>ADEMOLA IQBAL TIDJANI<br><span id="fc"></span></div>
+<div>
+  <a href="#work" data-i18n="nav.work">Work</a>
+  <a href="#about" data-i18n="nav.about">About</a>
+  <a href="#expertise" data-i18n="nav.expertise">Expertise</a>
+  <a href="#cv" data-i18n="nav.cv">CV</a>
+  <a href="#contact" data-i18n="nav.contact">Contact</a>
+  <br><span id="soc"></span>
+</div>
+<div>© <span id="yr"></span> AIT Build &amp; Interior Supply. <span data-i18n="footer.rights">All rights reserved.</span></div>
+</div></footer>
+<button id="top" aria-label="Back to top">↑</button>
+
+<dialog id="dlg"><div class="mb" id="dbody"></div></dialog>
+
+<script>
+/* ===== EDIT HERE: all site content ===== */
+const SITE={
+ cv:"assets/Ademola-Iqbal-Tidjani-CV.pdf", // replace with your PDF file in assets/
+ heroImg:"assets/project-interior.jpg", // e.g. "assets/hero.jpg" (leave empty for procedural art)
+ aboutImg:"", // e.g. "assets/about.jpg" (leave empty for procedural art)
+ email:"hello@example.com", phone:"+000 000 000 000", location:"City, Country",
+ whatsapp:"https://wa.me/000000000000",
+ social:[["Instagram","#"],["LinkedIn","#"],["Facebook","#"]],
+ formEndpoint:"" // paste a Formspree URL (https://formspree.io/f/xxxx) to enable sending; blank = opens email app
+};
+
+const I18N = {
+  en: {
+    lang: "en",
+    title: "Ademola Iqbal Tidjani | AIT Build & Interior Supply",
+    nav: { work: "Work", about: "About", expertise: "Expertise", cv: "CV", contact: "Contact" },
+    hero: {
+      lbl: "Architectural Construction · Interior Space Transformation · Renovation · Structural Development",
+      h1: "Ademola Iqbal Tidjani",
+      h2: "Crafting Spaces. Building Excellence.",
+      p: "A considered approach to building and transforming spaces: precise construction, thoughtful interiors, and a sourcing network that brings quality products from Nigeria into every project.",
+      workBtn: "Explore my work",
+      cvBtn: "Download CV"
+    },
+    work: {
+      lbl: "Featured Work",
+      h2: "Selected Projects",
+      all: "All Projects",
+      view: "View project"
+    },
+    about: {
+      lbl: "About",
+      h2: "The Mind Behind the Structures",
+      p1: "Ademola Iqbal Tidjani is a dedicated professional in architectural construction and interior space transformation. His work is guided by precision, creativity and a close eye for detail, with a firm commitment to quality at every stage.",
+      p2: "With a strong understanding of construction and a passion for transforming spaces, he works within your budget and your taste to deliver functional and impressive results. Through AIT Build & Interior Supply, he also imports unique, high-quality materials and products from China, Turkey, France, Italy, and Nigeria, bringing distinctive materials and finishes to every project."
+    },
+    expertise: {
+      lbl: "Expertise",
+      h2: "What I Do"
+    },
+    cv: {
+      lbl: "Curriculum Vitae",
+      h2: "My Professional Profile",
+      p: "Discover my professional background, expertise, experience, and capabilities.",
+      btn: "Download my CV"
+    },
+    contact: {
+      lbl: "Contact",
+      h2: "Let’s build something exceptional.",
+      p: "Have a project in mind? Let’s discuss how we can bring your vision to life.",
+      name: "Full name",
+      email: "Email address",
+      subject: "Subject",
+      message: "Message",
+      send: "Send message",
+      infoLabels: {
+        email: "Email",
+        phone: "Phone",
+        location: "Location",
+        whatsapp: "Chat on WhatsApp"
+      },
+      validation: {
+        name: "Please enter your name.",
+        email: "Please enter a valid email.",
+        subject: "Please add a subject.",
+        message: "Message should be at least 10 characters."
+      },
+      status: {
+        mailApp: "Opening your email app. Set formEndpoint in SITE to send directly.",
+        sent: "Thank you, your message has been sent.",
+        err: "Sorry, something went wrong. Please try again.",
+        netErr: "Network error. Please try again."
+      }
+    },
+    modal: {
+      close: "CLOSE",
+      overview: "Overview",
+      objectives: "Objectives",
+      scope: "Scope of work",
+      approach: "Design & construction approach",
+      gallery: "Gallery"
+    },
+    footer: {
+      rights: "All rights reserved."
+    },
+    cats: [
+      "Architectural Construction",
+      "Interior Design & Transformation",
+      "Renovation",
+      "Structural Development"
+    ],
+    services: [
+      ["Architectural Construction", "Precise, well-detailed building work from groundwork to finish.", 1],
+      ["Interior Space Transformation", "Interiors reimagined for how people live and work, with imported Nigerian products where they fit.", 2],
+      ["Renovation", "Careful renewal of existing spaces, improving function and character.", 3],
+      ["Structural Development", "Sound structural work that supports ambitious design.", 4],
+      ["Importation of Unique and Quality Materials", "Sourcing and importing high‑quality materials from global partners to enhance projects.", 5]
+    ],
+    projects: [
+      {n:"Project One",c:"Architectural Construction",l:"Location",y:"Year",o:"Overview placeholder.",ob:"Objectives placeholder.",s:"Scope of work placeholder.",a:"Design and construction approach placeholder.",seed:1},
+      {n:"Organic Contemporary Living",c:"Interior Design & Transformation",l:"Aspen, Colorado",y:"2024",img:"assets/project-interior.jpg",o:"Sculptural interior transformation featuring organic sweeping wooden architectural elements, integrated ambient lighting, and panoramic forest views.",ob:"Harmonize interior warmth with expansive nature vistas.",s:"Full living space remodeling, custom millwork, custom fireplace design, bespoke furnishings.",a:"Biophilic architectural curves flowing continuously from wall to ceiling with warm earthen tones.",seed:2},
+      {n:"Project Three",c:"Renovation",l:"Location",y:"Year",o:"Overview placeholder.",ob:"Objectives placeholder.",s:"Scope of work placeholder.",a:"Design and construction approach placeholder.",seed:3},
+      {n:"Project Four",c:"Structural Development",l:"Location",y:"Year",o:"Overview placeholder.",ob:"Objectives placeholder.",s:"Scope of work placeholder.",a:"Design and construction approach placeholder.",seed:4},
+      {n:"Project Five",c:"Interior Design & Transformation",l:"Location",y:"Year",o:"Overview placeholder.",ob:"Objectives placeholder.",s:"Scope of work placeholder.",a:"Design and construction approach placeholder.",seed:5},
+      {n:"Project Six",c:"Architectural Construction",l:"Location",y:"Year",o:"Overview placeholder.",ob:"Objectives placeholder.",s:"Scope of work placeholder.",a:"Design and construction approach placeholder.",seed:6}
+    ]
+  },
+  fr: {
+    lang: "fr",
+    title: "Ademola Iqbal Tidjani | AIT Construction & Décoration d'Intérieur",
+    nav: { work: "Projets", about: "À propos", expertise: "Expertise", cv: "CV", contact: "Contact" },
+    hero: {
+      lbl: "Construction Architecturale · Transformation d'Intérieurs · Rénovation · Développement Structurel",
+      h1: "Ademola Iqbal Tidjani",
+      h2: "Façonner des Espaces. Bâtir l'Excellence.",
+      p: "Une approche réfléchie pour bâtir et transformer les espaces : une construction de précision, des intérieurs soignés et un réseau d'approvisionnement intégrant des matériaux de qualité en provenance du Nigéria dans chaque projet.",
+      workBtn: "Découvrir mes projets",
+      cvBtn: "Télécharger mon CV"
+    },
+    work: {
+      lbl: "Projets à la une",
+      h2: "Sélection de Réalisations",
+      all: "Tous les projets",
+      view: "Voir le projet"
+    },
+    about: {
+      lbl: "À propos",
+      h2: "La Vision Derrière les Structures",
+      p1: "Ademola Iqbal Tidjani est un professionnel passionné de la construction architecturale et de la transformation d'espaces intérieurs. Son travail est guidé par la précision, la créativité et le sens du détail, avec une exigence constante de qualité à chaque étape.",
+      p2: "Fort d'une solide maîtrise de la construction et d'une passion pour la métamorphose des espaces, il s'adapte à votre budget et à vos goûts pour offrir des réalisations à la fois fonctionnelles et remarquables. À travers AIT Build & Interior Supply, il importe également des matériaux et produits uniques de haute qualité depuis la Chine, la Turquie, la France, l'Italie et le Nigéria, apportant des finitions distinctives à chaque projet."
+    },
+    expertise: {
+      lbl: "Savoir-faire",
+      h2: "Ce Que Je Fais"
+    },
+    cv: {
+      lbl: "Curriculum Vitae",
+      h2: "Mon Profil Professionnel",
+      p: "Découvrez mon parcours professionnel, mon expertise, mes réalisations et mes compétences.",
+      btn: "Télécharger mon CV"
+    },
+    contact: {
+      lbl: "Contact",
+      h2: "Construisons ensemble un projet d'exception.",
+      p: "Vous avez un projet en tête ? Échangeons sur la façon de concrétiser votre vision.",
+      name: "Nom complet",
+      email: "Adresse e-mail",
+      subject: "Objet",
+      message: "Message",
+      send: "Envoyer le message",
+      infoLabels: {
+        email: "E-mail",
+        phone: "Téléphone",
+        location: "Localisation",
+        whatsapp: "Discuter sur WhatsApp"
+      },
+      validation: {
+        name: "Veuillez entrer votre nom.",
+        email: "Veuillez entrer une adresse e-mail valide.",
+        subject: "Veuillez préciser un objet.",
+        message: "Le message doit comporter au moins 10 caractères."
+      },
+      status: {
+        mailApp: "Ouverture de votre messagerie. Définissez formEndpoint dans SITE pour envoyer directement.",
+        sent: "Merci, votre message a bien été envoyé.",
+        err: "Désolé, une erreur est survenue. Veuillez réessayer.",
+        netErr: "Erreur réseau. Veuillez réessayer."
+      }
+    },
+    modal: {
+      close: "FERMER",
+      overview: "Vue d'ensemble",
+      objectives: "Objectifs",
+      scope: "Étendue des travaux",
+      approach: "Approche de conception & de construction",
+      gallery: "Galerie"
+    },
+    footer: {
+      rights: "Tous droits réservés."
+    },
+    cats: [
+      "Construction Architecturale",
+      "Design & Transformation d'Intérieurs",
+      "Rénovation",
+      "Développement Structurel"
+    ],
+    services: [
+      ["Construction Architecturale", "Ouvrages bâtis soignés et rigoureux, des fondations aux finitions.", 1],
+      ["Transformation d'Intérieurs", "Des espaces réinventés pour votre façon de vivre et de travailler, avec des matériaux raffinés importés du Nigéria.", 2],
+      ["Rénovation", "Réhabilitation minutieuse de lieux existants pour en sublimer le caractère et la fonctionnalité.", 3],
+      ["Développement Structurel", "Travaux structurels fiables et durables pour donner vie aux conceptions les plus ambitieuses.", 4]
+    ],
+    projects: [
+      {n:"Projet Un",c:"Construction Architecturale",l:"Emplacement",y:"Année",o:"Aperçu du projet.",ob:"Objectifs du projet.",s:"Étendue des travaux.",a:"Approche de conception et de construction.",seed:1},
+      {n:"Espace de Vie Organique Contemporain",c:"Design & Transformation d'Intérieurs",l:"Aspen, Colorado",y:"2024",img:"assets/project-interior.jpg",o:"Transformation intérieure sculpturale avec des éléments architecturaux en bois aux courbes organiques, un éclairage d'ambiance intégré et des vues panoramiques sur la forêt.",ob:"Harmoniser la chaleur intérieure avec de vastes panoramas naturels.",s:"Rénovation intégrale de l'espace de vie, menuiserie sur mesure, foyer sculptural et mobilier personnalisé.",a:"Courbes biophiliques continues des murs au plafond avec des tonalités terreuses chaleureuses.",seed:2},
+      {n:"Projet Trois",c:"Rénovation",l:"Emplacement",y:"Année",o:"Aperçu du projet.",ob:"Objectifs du projet.",s:"Étendue des travaux.",a:"Approche de conception et de construction.",seed:3},
+      {n:"Projet Quatre",c:"Développement Structurel",l:"Emplacement",y:"Année",o:"Aperçu du projet.",ob:"Objectifs du projet.",s:"Étendue des travaux.",a:"Approche de conception et de construction.",seed:4},
+      {n:"Projet Cinq",c:"Design & Transformation d'Intérieurs",l:"Emplacement",y:"Année",o:"Aperçu du projet.",ob:"Objectifs du projet.",s:"Étendue des travaux.",a:"Approche de conception et de construction.",seed:5},
+      {n:"Projet Six",c:"Construction Architecturale",l:"Emplacement",y:"Année",o:"Aperçu du projet.",ob:"Objectifs du projet.",s:"Étendue des travaux.",a:"Approche de conception et de construction.",seed:6}
+    ]
+  }
+};
+/* ===== end editable content ===== */
+
+const $=s=>document.querySelector(s);
+let curLang="en";
+let curCatIndex=-1; // -1 = All Projects
+
+// Placeholder art: warm architectural compositions. If p.img is set, the real photo is used instead.
+function art(seed,img){
+ if(img)return `<img src="${img}" alt="" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform .9s">`;
+ const P=["#5C3A1E","#7A4A00","#B8946A","#D9C3A0","#F3EBDD","#1A1612"];
+ const r=i=>P[(seed*3+i*2)%6];let w="";
+ for(let i=0;i<5;i++){const x=20+i*70+(seed*13%20),h=120+((seed+i)*47%160);
+  w+=`<rect x="${x}" y="${400-h}" width="60" height="${h}" fill="${r(i)}"/>`;
+  for(let k=0;k<3;k++)w+=`<rect x="${x+10}" y="${400-h+14+k*34}" width="40" height="20" fill="${r(i+3)}" opacity=".55"/>`;}
+ return `<svg viewBox="0 0 400 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="400" height="400" fill="${P[(seed+3)%2+3]}"/><circle cx="${80+seed*40%240}" cy="90" r="38" fill="#F3EBDD" opacity=".8"/>${w}<rect y="396" width="400" height="4" fill="#1A1612"/></svg>`;}
+
+const heroEl=document.getElementById("home");
+if(heroEl&&SITE.heroImg){
+ heroEl.style.backgroundImage=`url("${SITE.heroImg}")`;
+}
+$("#aboutImg").innerHTML=art(5, SITE.aboutImg);
+
+function render(){
+ const t=I18N[curLang];
+ const allLabel=t.work.all;
+ const categories=[allLabel,...t.cats];
+ $("#filters").innerHTML=categories.map((c,idx)=>{
+  const isSelected=(idx===0&&curCatIndex===-1)||(idx-1===curCatIndex);
+  return `<button role="tab" aria-selected="${isSelected}" class="${isSelected?"on":""}">${c}</button>`;
+ }).join("");
+ $("#filters").querySelectorAll("button").forEach((b,idx)=>{
+  b.onclick=()=>{curCatIndex=idx===0?-1:idx-1;render()};
+ });
+ const list=t.projects.map((p,i)=>[p,i]).filter(([p])=>curCatIndex===-1||p.c===t.cats[curCatIndex]);
+ $("#grid").innerHTML=list.map(([p,i])=>`<button class="card rv in" data-i="${i}"><div class="ph">${art(p.seed,p.img)}</div><h3>${p.n}</h3><div class="meta">${p.c} · ${p.l} · ${p.y}</div><span class="view">${t.work.view}</span></button>`).join("");
+ $("#grid").querySelectorAll(".card").forEach(c=>c.onclick=()=>open(+c.dataset.i));
+}
+
+function open(i){
+ const t=I18N[curLang];
+ const p=t.projects[i];
+ const galleryHtml=(p.gallery&&p.gallery.length)
+  ? p.gallery.map(img=>`<div class="ph">${art(0,img)}</div>`).join("")
+  : [1,2,3].map(k=>`<div class="ph">${art(p.seed+k)}</div>`).join("");
+ $("#dbody").innerHTML=`<button id="x">${t.modal.close}</button><div class="lbl">${p.c} · ${p.l} · ${p.y}</div><h2 class="big">${p.n}</h2><div class="ph">${art(p.seed,p.img)}</div>
+ <h4>${t.modal.overview}</h4><p>${p.o}</p><h4>${t.modal.objectives}</h4><p>${p.ob}</p><h4>${t.modal.scope}</h4><p>${p.s}</p><h4>${t.modal.approach}</h4><p>${p.a}</p>
+ <h4>${t.modal.gallery}</h4><div class="mg">${galleryHtml}</div>`;
+ $("#dlg").showModal();
+ $("#x").onclick=()=>$("#dlg").close();
+}
+$("#dlg").addEventListener("click",e=>{if(e.target.id==="dlg")e.target.close()});
+
+function setLanguage(lang){
+ if(!I18N[lang])return;
+ curLang=lang;
+ try{localStorage.setItem("ait_portfolio_lang",lang)}catch(e){}
+ document.documentElement.lang=lang;
+ document.title=I18N[lang].title;
+
+ $("#btn-en").classList.toggle("on",lang==="en");
+ $("#btn-fr").classList.toggle("on",lang==="fr");
+ $("#btn-en").setAttribute("aria-pressed",lang==="en");
+ $("#btn-fr").setAttribute("aria-pressed",lang==="fr");
+
+ document.querySelectorAll("[data-i18n]").forEach(el=>{
+  const key=el.dataset.i18n;
+  const val=key.split('.').reduce((acc,part)=>acc&&acc[part],I18N[lang]);
+  if(val){
+   if(el.tagName==='INPUT'||el.tagName==='TEXTAREA'){
+    el.placeholder=val;
+   }else if(val.includes('<')||val.includes('\n')){
+    el.innerHTML=val.replace(/\n/g,'<br>');
+   }else{
+    el.textContent=val;
+   }
+  }
+ });
+
+ const t=I18N[lang];
+ $("#svc").innerHTML=t.services.map(s=>`<div class="rv in"><div class="ph">${art(s[2]+6, s[3])}</div><h3>${s[0]}</h3><p>${s[1]}</p></div>`).join("");
+ $("#info").innerHTML=`<p>${t.contact.infoLabels.email}: <a href="mailto:${SITE.email}">${SITE.email}</a></p><p>${t.contact.infoLabels.phone}: ${SITE.phone}</p><p>${t.contact.infoLabels.location}: ${SITE.location}</p><p><a href="${SITE.whatsapp}" target="_blank" rel="noopener">${t.contact.infoLabels.whatsapp}</a></p><p>${SITE.social.map(s=>`<a href="${s[1]}" target="_blank" rel="noopener">${s[0]}</a>`).join(" · ")}</p>`;
+ render();
+}
+
+$("#btn-en").onclick=()=>setLanguage("en");
+$("#btn-fr").onclick=()=>setLanguage("fr");
+
+// Check initial language
+try{
+ const saved=localStorage.getItem("ait_portfolio_lang");
+ if(saved==="fr"||saved==="en"){curLang=saved}
+ else if(navigator.language&&navigator.language.toLowerCase().startsWith("fr")){curLang="fr"}
+}catch(e){}
+
+// Initial load
+setLanguage(curLang);
+
+// CV, contact, footer
+["#cvTop","#cvBtn"].forEach(s=>$(s).href=SITE.cv);
+$("#fc").innerHTML=`<br>${SITE.email} · ${SITE.phone}`;
+$("#soc").innerHTML=SITE.social.map(s=>`<a href="${s[1]}">${s[0]}</a>`).join("");
+$("#yr").textContent=new Date().getFullYear();
+
+// nav
+$("#burger").onclick=(e)=>{e.stopPropagation();const o=$("#nav").classList.toggle("open");$("#burger").setAttribute("aria-expanded",o)};
+$("#nav").querySelectorAll("a").forEach(a=>a.onclick=()=>{
+ $("#nav").classList.remove("open");
+ $("#burger").setAttribute("aria-expanded","false");
+});
+document.addEventListener("click",e=>{
+ if(!e.target.closest("header")&&$("#nav").classList.contains("open")){
+  $("#nav").classList.remove("open");
+  $("#burger").setAttribute("aria-expanded","false");
+ }
+});
+$("#top").onclick=()=>scrollTo({top:0,behavior:"smooth"});
+addEventListener("scroll",()=>$("#top").classList.toggle("show",scrollY>700),{passive:true});
+
+// reveal
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll(".rv").forEach(el=>io.observe(el));
+
+// form
+$("#form").addEventListener("submit",async ev=>{
+ ev.preventDefault();let ok=true;const f=ev.target;
+ const t=I18N[curLang];
+ const rules={
+  n:v=>v.trim().length>1||t.contact.validation.name,
+  e:v=>/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v)||t.contact.validation.email,
+  s:v=>v.trim().length>2||t.contact.validation.subject,
+  m:v=>v.trim().length>9||t.contact.validation.message
+ };
+ for(const k in rules){const r=rules[k]($("#"+k).value);document.querySelector(`[data-for=${k}]`).textContent=r===true?"":r;if(r!==true)ok=false}
+ if(!ok)return;
+ const d={name:f.name.value,email:f.email.value,subject:f.subject.value,message:f.message.value};
+ if(!SITE.formEndpoint){
+  location.href=`mailto:${SITE.email}?subject=${encodeURIComponent(d.subject)}&body=${encodeURIComponent(d.message+"\n\n"+d.name+" ("+d.email+")")}`;
+  $("#status").textContent=t.contact.status.mailApp;
+  return;
+ }
+ try{
+  const r=await fetch(SITE.formEndpoint,{method:"POST",headers:{"Content-Type":"application/json",Accept:"application/json"},body:JSON.stringify(d)});
+  $("#status").textContent=r.ok?t.contact.status.sent:t.contact.status.err;
+  if(r.ok)f.reset();
+ }catch(e){
+  $("#status").textContent=t.contact.status.netErr;
+ }
+});
+</script>
+</body>
+</html>
